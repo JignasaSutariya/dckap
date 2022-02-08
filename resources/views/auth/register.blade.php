@@ -17,7 +17,7 @@
                         @csrf
 
                         <div class="buttonLarge">
-                            <button class="btn btn-primary loginGoogle"><i class="fa fa-google"></i> | {{ __('Login with Google') }}</button>
+                            <a href="{{ url('auth/google') }}" class="btn btn-primary loginGoogle"><i class="fa fa-google"></i> | {{ __('Login with Google') }} </a>
                         </div>
                         <div class="devider">{{ __('OR') }}</div>
                         <div class="formFields">

@@ -11310,3 +11310,11 @@ textarea.form-control-lg {
     width: 100%;
 }
 
+.welcomeTitle{
+    display: inline-block;
+}
+
+.welcomeMenu{
+    display: inline-block;
+    text-align: right ;
+}

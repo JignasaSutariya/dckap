@@ -16,8 +16,7 @@
                     <form class="mainForm" method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="buttonLarge">
-                            <a href="{{ url('auth/google') }}" class="btn btn-primary loginGoogle"><i class="fa fa-google"></i> | {{ __('Login with Google') }}
-                                <a href="{{ url('auth/google') }}">
+                            <a href="{{ url('auth/google') }}" class="btn btn-primary loginGoogle"><i class="fa fa-google"></i> | {{ __('Login with Google') }} </a>
                         </div>
                         <div class="devider">{{ __('OR') }}</div>
                         <div class="formFields">

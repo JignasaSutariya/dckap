@@ -16,16 +16,13 @@ use App\Http\Controllers\GoogleController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('welcome');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'home'])->name('home');
+
 
 Auth::routes();
 
+// Google Login
 Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
